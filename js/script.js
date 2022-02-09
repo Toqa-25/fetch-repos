@@ -20,7 +20,7 @@ input.addEventListener("keyup", function (event) {
 
 function getRepoes() {
     if (input.value.trim() != "" && input.value.trim() != null ) {
-        fetch(`https://api.github.com/users/toqa-25/repos`)
+    fetch(`https://api.github.com/users/${input.value.trim()}/repos`)
           .then((response) => response.json())
           .then((repos) => {
           repos.forEach(repo => {
