@@ -24,11 +24,7 @@ function getRepoes() {
           // console.log(repo.name); // =>1
           // console.log(repo.stargazers_count);
           reposList.inearHTML = "";
-          reposList.innerHTML += `<li class="fetch-list-item">${
-            repo.name
-          }<a href="https://github.com/${input.value.trim()}/${
-            repo.name
-          }" target="_blank" rel=""> visite it</a> </li>`;
+          reposList.innerHTML += `<li class="fetch-list-item">${repo.name}<a href="https://github.com/${input.value.trim()}/${repo.name}" target="_blank" rel=""> visite it</a> </li>`;
           // input.value=null
           console.log(input.value.trim());
         });
