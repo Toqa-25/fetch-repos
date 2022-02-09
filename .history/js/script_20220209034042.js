@@ -27,7 +27,7 @@ function getRepoes() {
           }<a href="https://github.com/${input.value.trim()}/${
             repo.name
           }" target="_blank" rel=""> visite it</a> </li>`;
-          input.value=null
+          // input.value=null
           
         });
       });
