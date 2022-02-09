@@ -23,7 +23,7 @@ function getRepoes() {
       .then((response) => response.json())
       .then((repos) => {
         reposList.innerHTML = "";
-        // console.log("e")
+        console.log("e")
         repos.forEach((repo) => {
           reposList.innerHTML += `<li class="fetch-list-item">${
             repo.name

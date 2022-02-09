@@ -17,13 +17,13 @@ input.addEventListener("keyup", function (event) {
 
 function getRepoes() {
   if (input.value.trim() != "" && input.value.trim() != null) {
-    // reposList.innerHTML = "";
-    // console.log("r")
+    reposList.inearHTML = "";
+    console.log("e")
     fetch(`https://api.github.com/users/${input.value.trim()}/repos`)
       .then((response) => response.json())
       .then((repos) => {
-        reposList.innerHTML = "";
-        // console.log("e")
+        reposList.inearHTML = "";
+        console.log("e")
         repos.forEach((repo) => {
           reposList.innerHTML += `<li class="fetch-list-item">${
             repo.name

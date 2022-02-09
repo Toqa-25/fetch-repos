@@ -17,20 +17,18 @@ input.addEventListener("keyup", function (event) {
 
 function getRepoes() {
   if (input.value.trim() != "" && input.value.trim() != null) {
-    // reposList.innerHTML = "";
-    // console.log("r")
+    // reposList.inearHTML = "";
     fetch(`https://api.github.com/users/${input.value.trim()}/repos`)
       .then((response) => response.json())
       .then((repos) => {
-        reposList.innerHTML = "";
-        // console.log("e")
         repos.forEach((repo) => {
+          reposList.inearHTML = "";
           reposList.innerHTML += `<li class="fetch-list-item">${
             repo.name
           }<a href="https://github.com/${input.value.trim()}/${
             repo.name
           }" target="_blank" rel=""> visite it</a> </li>`;
-          // input.value=null
+          input.value=null
           
         });
       });
